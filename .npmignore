@@ -1,0 +1,16 @@
+.git
+.gitignore
+.github
+node_modules
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+*.swp
+*.swo
+_temp_render*.html
+test*.pdf
+gen-pdf.js
+GITHUB-PUBLISH.md
