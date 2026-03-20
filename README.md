@@ -19,38 +19,7 @@ mkdtp-project/
 
 ## 🚀 Installation
 
-### 1. Quick Install (Recommended)
-
-#### On macOS / Linux:
-```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/mkdtp/main/install.sh | bash
-```
-
-#### On Windows (PowerShell):
-```powershell
-irm https://raw.githubusercontent.com/YOUR_USERNAME/mkdtp/main/install.bat | iex
-```
-
-### 2. Using NPM (Requires Node.js)
-
-```bash
-npm install -g mkdtp
-```
-
-### 3. Using Package Managers (Coming Soon)
-
-```bash
-# Homebrew (macOS)
-brew install mkdtp
-
-# apt (Ubuntu/Debian)
-sudo apt-get install mkdtp
-
-# Chocolatey (Windows)
-choco install mkdtp
-```
-
-### 4. Manual Installation
+### Installation
 
 Clone the repository and install:
 ```bash
