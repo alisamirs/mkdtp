@@ -3,6 +3,7 @@
 ## 5-Second Setup
 
 ```bash
+npm install
 npm install -g .
 mkdtp document.md
 ```

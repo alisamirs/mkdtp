@@ -1,0 +1,35 @@
+PS C:\Users\ali19> git clone https://github.com/alisamirs/mkdtp.git
+Cloning into 'mkdtp'...
+remote: Enumerating objects: 34, done.
+remote: Counting objects: 100% (34/34), done.
+remote: Compressing objects: 100% (27/27), done.
+remote: Total 34 (delta 12), reused 29 (delta 7), pack-reused 0 (from 0)
+Receiving objects: 100% (34/34), 16.55 KiB | 394.00 KiB/s, done.
+Resolving deltas: 100% (12/12), done.
+PS C:\Users\ali19> cd mkdtp
+PS C:\Users\ali19\mkdtp> npm install -g .
+
+changed 1 package in 614ms
+PS C:\Users\ali19\mkdtp> mkdtp
+node:internal/modules/cjs/loader:1404
+  throw err;
+  ^
+
+Error: Cannot find module 'markdown-it'
+Require stack:
+- C:\Users\ali19\mkdtp\mkdtp
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (C:\Users\ali19\mkdtp\mkdtp:5:20)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\Users\\ali19\\mkdtp\\mkdtp' ]
+}
+
+Node.js v22.17.0
