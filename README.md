@@ -23,7 +23,7 @@ mkdtp-project/
 
 Clone the repository and install:
 ```bash
-git clone https://github.com/YOUR_USERNAME/mkdtp.git
+git clone https://github.com/alisamirs/mkdtp.git
 cd mkdtp
 npm install -g .
 ```
