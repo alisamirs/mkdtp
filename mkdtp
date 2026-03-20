@@ -53,9 +53,9 @@ if (args.includes('-v') || args.includes('--version')) {
 
 // Validate arguments
 if (args.length === 0) {
-  console.error('❌ Error: No input file specified\n');
+
   showHelp();
-  process.exit(1);
+  process.exit(0);
 }
 
 const mdFile = args[0];
