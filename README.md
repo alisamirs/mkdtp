@@ -17,15 +17,52 @@ mkdtp-project/
 └── node_modules/          # Dependencies (auto-generated)
 ```
 
-## 🚀 Quick Start
+## 🚀 Installation
 
-### Install Globally
+### 1. Quick Install (Recommended)
+
+#### On macOS / Linux:
 ```bash
-cd mkdtp-project
+curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/mkdtp/main/install.sh | bash
+```
+
+#### On Windows (PowerShell):
+```powershell
+irm https://raw.githubusercontent.com/YOUR_USERNAME/mkdtp/main/install.bat | iex
+```
+
+### 2. Using NPM (Requires Node.js)
+
+```bash
+npm install -g mkdtp
+```
+
+### 3. Using Package Managers (Coming Soon)
+
+```bash
+# Homebrew (macOS)
+brew install mkdtp
+
+# apt (Ubuntu/Debian)
+sudo apt-get install mkdtp
+
+# Chocolatey (Windows)
+choco install mkdtp
+```
+
+### 4. Manual Installation
+
+Clone the repository and install:
+```bash
+git clone https://github.com/YOUR_USERNAME/mkdtp.git
+cd mkdtp
 npm install -g .
 ```
 
-### Use Anywhere
+## 🚀 Quick Start
+
+After installation, use it anywhere:
+
 ```bash
 mkdtp document.md
 mkdtp input.md output.pdf

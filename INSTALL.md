@@ -1,39 +1,102 @@
-# How to Install mkdtp Globally
+# How to Install mkdtp
 
-## Step 1: Navigate to Project Directory
+Choose your preferred installation method:
 
+## Option 1: Quick One-Liner (Recommended)
+
+### macOS / Linux
 ```bash
-cd E:\Progs\cetera\Dev Studies\PY\mkdtp-project
+curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/mkdtp/main/install.sh | bash
 ```
 
-## Step 2: Install Globally
+### Windows (PowerShell)
+```powershell
+irm https://raw.githubusercontent.com/YOUR_USERNAME/mkdtp/main/install.bat | iex
+```
+
+**What it does:**
+- Downloads the installer script
+- Checks for npm/Node.js
+- Installs mkdtp globally
+- Confirms installation with usage examples
+
+## Option 2: NPM (Standard)
 
 ```bash
+npm install -g mkdtp
+```
+
+**Requirements:** Node.js and npm installed
+
+## Option 3: Manual Installation from Source
+
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/mkdtp.git
+cd mkdtp
+
+# Install globally
 npm install -g .
 ```
 
-This will:
-- Install dependencies (markdown-it, highlight.js, puppeteer)
-- Register `mkdtp` as a global command
-- Make it available from anywhere
+## Option 4: Package Managers (Coming Soon)
 
-## Step 3: Verify Installation
+Once published to package registries:
+
+### Homebrew (macOS)
+```bash
+brew install mkdtp
+```
+
+### apt (Ubuntu/Debian)
+```bash
+sudo apt-get install mkdtp
+```
+
+### Chocolatey (Windows)
+```powershell
+choco install mkdtp
+```
+
+### Scoop (Windows)
+```powershell
+scoop install mkdtp
+```
+
+## Verify Installation
 
 ```bash
+mkdtp --version
 mkdtp --help
 ```
 
-Should show the help menu.
+Should display version and help information.
 
-## Step 4: Use Anywhere
+## Troubleshooting
+
+### "Command not found" after installation
+
+**On Windows:**
+1. Open "Edit Environment Variables"
+2. Add npm bin directory to PATH
+3. Restart terminal/PowerShell
+
+**On macOS/Linux:**
+```bash
+# Check npm bin location
+npm config get prefix
+
+# Should be in your PATH, typically: /usr/local/bin or ~/.npm/bin
+```
+
+### npm: command not found
+
+Install Node.js from: https://nodejs.org/
+
+### Permission denied (macOS/Linux)
 
 ```bash
-# Works from any directory now!
-mkdtp C:\Users\ali19\Documents\file.md
-
-# Or with relative paths
-cd C:\Users\ali19\Documents
-mkdtp guide.md guide.pdf
+sudo npm install -g mkdtp
 ```
 
 ## Uninstall
@@ -42,51 +105,11 @@ mkdtp guide.md guide.pdf
 npm uninstall -g mkdtp
 ```
 
-## Troubleshooting
+## Next Steps
 
-### "Command not found" after global install
-
-Find NPM bin directory:
-```bash
-npm config get prefix
-```
-
-Add to Windows PATH:
-1. Search "Environment Variables"
-2. Edit System Environment Variables
-3. Add the npm prefix path to PATH
-4. Restart terminal
-
-### Permission Denied (Linux/Mac)
-```bash
-chmod +x mkdtp
-npm install -g .
-```
-
-### Dependencies Not Installing
-
-Make sure you're in the mkdtp-project directory:
-```bash
-cd mkdtp-project
-npm install -g .
-```
-
-## Files in This Package
-
-- `mkdtp` - The CLI tool (executable)
-- `package.json` - Dependencies and configuration
-- `README.md` - Project overview
-- `README-CLI.md` - Full documentation
-- `QUICKSTART.md` - Quick reference
-- `gen-pdf.js` - Original script (reference)
+After installing, see [QUICKSTART.md](QUICKSTART.md) for usage examples.
 
 ---
 
-**After installation, you can use:**
-```bash
-mkdtp document.md
-mkdtp file.md output.pdf
-mkdtp --help
-```
+**Having trouble?** Check the [README.md](README.md) or create an issue on GitHub.
 
-From any terminal in any directory! 🚀

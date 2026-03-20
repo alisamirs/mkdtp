@@ -11,10 +11,31 @@
     "pdf",
     "mathjax",
     "converter",
-    "cli"
+    "cli",
+    "command-line",
+    "formula",
+    "document"
   ],
-  "author": "Your Name",
+  "author": "Your Name <your.email@example.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/mkdtp.git"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/mkdtp",
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/mkdtp/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "preferGlobal": true,
+  "files": [
+    "mkdtp",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "markdown-it": "^13.0.1",
     "highlight.js": "^11.8.0",
