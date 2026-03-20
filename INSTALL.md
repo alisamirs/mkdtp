@@ -36,6 +36,7 @@ git clone https://github.com/YOUR_USERNAME/mkdtp.git
 cd mkdtp
 
 # Install globally
+npm install
 npm install -g .
 ```
 

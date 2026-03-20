@@ -25,6 +25,7 @@ Clone the repository and install:
 ```bash
 git clone https://github.com/alisamirs/mkdtp.git
 cd mkdtp
+npm install
 npm install -g .
 ```
 
@@ -90,7 +91,7 @@ To modify the CLI tool:
 
 1. Edit `mkdtp` file
 2. Test locally: `node mkdtp test.md`
-3. Reinstall: `npm install -g .`
+3. Reinstall: `npm install && npm install -g .`
 
 ## 📄 Files
 
@@ -125,6 +126,7 @@ To modify the CLI tool:
 
 ### Method 1: Global Install (Recommended)
 ```bash
+npm install
 npm install -g .
 ```
 

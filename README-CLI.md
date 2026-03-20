@@ -11,6 +11,7 @@ npm install -g mkdtp
 
 Or install from this directory:
 ```bash
+npm install
 npm install -g .
 ```
 
@@ -104,7 +105,7 @@ To modify the CLI tool:
 
 1. Edit `mkdtp` file
 2. Test locally: `node mkdtp test.md`
-3. Reinstall: `npm install -g .`
+3. Reinstall: `npm install && npm install -g .`
 
 ---
 
